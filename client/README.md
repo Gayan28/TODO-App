@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# 🎨 Frontend – TODO Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend of the TODO application built using React. It provides a modern, clean, and interactive user interface for managing tasks.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Tech Stack
 
-### `npm start`
+* React.js
+* Axios (API communication)
+* Framer Motion (animations)
+* React Hot Toast (notifications)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+* Display all TODO items in a clean dashboard layout
+* Add new tasks using a simple form
+* Edit task title and description with inline form
+* Mark tasks as complete/incomplete
+* Delete tasks with confirmation modal
+* Visual distinction for completed tasks
+* Toast notifications for user feedback
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧩 UI Highlights
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Gradient background with glassmorphism design
+* Smooth animations for task cards
+* Well-spaced layout with clear typography
+* Responsive and user-friendly interface
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ Setup Instructions
 
-### `npm run eject`
+```
+cd frontend
+npm install
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🔗 API Integration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The frontend communicates with the backend via HTTP requests:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+* `GET /api/todos`
+* `POST /api/todos`
+* `PUT /api/todos/:id`
+* `PATCH /api/todos/:id/done`
+* `DELETE /api/todos/:id`
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📌 Assumptions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Backend is running on `http://localhost:5000`
+* No authentication required
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## ⚠️ Limitations
 
-### Analyzing the Bundle Size
+* No pagination or filtering
+* No multi-user support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 💡 Improvements (Future Work)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* Add task filtering (All / Completed / Active)
+* Add due dates and priorities
+* Implement authentication
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🎯 Summary
 
-### Deployment
+The frontend was designed with a focus on simplicity, usability, and visual clarity. The goal was to create an intuitive experience while maintaining clean and maintainable code.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
