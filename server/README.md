@@ -1,6 +1,6 @@
 # ⚙️ Backend – TODO API
 
-This is the backend service for the TODO application. It provides a RESTful API for managing tasks and handles data persistence using MongoDB.
+This backend provides a RESTful API for managing TODO items and handles data persistence using MongoDB.
 
 ---
 
@@ -36,7 +36,7 @@ This is the backend service for the TODO application. It provides a RESTful API 
 
 ## ⚙️ Setup Instructions
 
-```
+```id="l2c0zv"
 cd backend
 npm install
 npm run dev
@@ -46,23 +46,31 @@ npm run dev
 
 ## 🔐 Environment Variables
 
-Create a `.env` file in the backend folder:
+Create a `.env` file:
 
-```
+```id="yfa2jc"
 MONGO_URI=your_mongodb_connection_string
 PORT=5000
 ```
 
 ---
 
+## ⚠️ Error Handling
+
+* try-catch blocks used in all controllers
+* Proper HTTP status codes (`200, 201, 400, 404, 500`)
+* Validation for required fields (e.g., title)
+* Clear error messages returned to frontend
+
+---
+
 ## 🗄️ Database
 
-* MongoDB is used for data storage
-* Mongoose is used for schema modeling
+MongoDB is used for storing TODO data.
 
 ### Sample Schema
 
-```
+```id="1fs7ay"
 {
   title: String,
   description: String,
@@ -79,24 +87,16 @@ PORT=5000
 
 ---
 
-## ⚠️ Limitations
-
-* No authentication or authorization
-* No input sanitization for advanced security
-* No rate limiting
-
----
-
 ## 💡 Future Improvements
 
 * Add authentication (JWT)
-* Add validation middleware
-* Implement pagination
+* Add request validation middleware
+* Add logging and monitoring
 
 ---
 
 ## 🎯 Summary
 
-The backend was designed following RESTful principles with a clear separation of concerns. The goal was to keep the API simple, scalable, and easy to integrate with the frontend.
+The backend follows RESTful principles and is designed to be simple, reliable, and easy to integrate with the frontend.
 
 ---

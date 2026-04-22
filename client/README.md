@@ -1,13 +1,13 @@
 # 🎨 Frontend – TODO Dashboard
 
-This is the frontend of the TODO application built using React. It provides a modern, clean, and interactive user interface for managing tasks.
+This is the frontend of the TODO application built using React. It provides a modern, interactive dashboard for managing tasks with a strong focus on usability and visual design.
 
 ---
 
 ## 🚀 Tech Stack
 
 * React.js
-* Axios (API communication)
+* Axios
 * Framer Motion (animations)
 * React Hot Toast (notifications)
 
@@ -15,28 +15,29 @@ This is the frontend of the TODO application built using React. It provides a mo
 
 ## ✨ Features
 
-* Display all TODO items in a clean dashboard layout
-* Add new tasks using a simple form
-* Edit task title and description with inline form
-* Mark tasks as complete/incomplete
+* Display TODOs in a clean, card-based layout
+* Add new tasks with title and description
+* Edit tasks using an inline edit form
+* Mark tasks as completed/uncompleted
 * Delete tasks with confirmation modal
-* Visual distinction for completed tasks
-* Toast notifications for user feedback
+* Clear visual distinction for completed tasks
 
 ---
 
-## 🧩 UI Highlights
+## 💎 UX & UI Enhancements
 
 * Gradient background with glassmorphism design
-* Smooth animations for task cards
-* Well-spaced layout with clear typography
-* Responsive and user-friendly interface
+* Smooth animations and transitions (Framer Motion)
+* Hover effects and button feedback
+* Toast notifications for success/error states
+* Loading states to improve responsiveness
+* Disabled actions during API calls to prevent duplicate operations
 
 ---
 
 ## ⚙️ Setup Instructions
 
-```
+```id="dxv3p5"
 cd frontend
 npm install
 npm start
@@ -46,40 +47,42 @@ npm start
 
 ## 🔗 API Integration
 
-The frontend communicates with the backend via HTTP requests:
+The frontend communicates with the backend using RESTful API calls:
 
-* `GET /api/todos`
-* `POST /api/todos`
-* `PUT /api/todos/:id`
-* `PATCH /api/todos/:id/done`
-* `DELETE /api/todos/:id`
+* `GET /api/todos` – Fetch all tasks
+* `POST /api/todos` – Create task
+* `PUT /api/todos/:id` – Update task
+* `PATCH /api/todos/:id/done` – Toggle completion
+* `DELETE /api/todos/:id` – Delete task
+
+---
+
+## ⚠️ Error Handling
+
+* try-catch blocks used for all API calls
+* User-friendly toast messages for errors
+* Global Axios interceptor for consistent error handling
+* Loading states for better UX
 
 ---
 
 ## 📌 Assumptions
 
-* Backend is running on `http://localhost:5000`
+* Backend runs on `http://localhost:5000`
 * No authentication required
 
 ---
 
-## ⚠️ Limitations
+## 💡 Future Improvements
 
-* No pagination or filtering
-* No multi-user support
-
----
-
-## 💡 Improvements (Future Work)
-
-* Add task filtering (All / Completed / Active)
-* Add due dates and priorities
-* Implement authentication
+* Task filtering (All / Completed / Active)
+* Search functionality
+* Dark mode
 
 ---
 
 ## 🎯 Summary
 
-The frontend was designed with a focus on simplicity, usability, and visual clarity. The goal was to create an intuitive experience while maintaining clean and maintainable code.
+The frontend was designed to be simple, responsive, and user-friendly while incorporating modern UI practices and smooth user interactions.
 
 ---

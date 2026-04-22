@@ -1,6 +1,6 @@
 # 📝 Full Stack TODO Application
 
-This project is a simple yet fully functional TODO application built as part of a full-stack development assignment. It demonstrates core concepts of modern web development including frontend-backend communication, RESTful API design, and database persistence.
+This project is a full-stack TODO application built to demonstrate core concepts of modern web development, including RESTful API design, frontend-backend integration, and user-focused UI/UX.
 
 ---
 
@@ -14,28 +14,30 @@ This project is a simple yet fully functional TODO application built as part of 
 
 ## ✨ Features
 
-* Create new TODO items with title and description
-* View all TODOs in a clean dashboard-style UI
-* Edit existing TODOs
-* Mark TODOs as completed/uncompleted
-* Delete TODOs with confirmation
-* Responsive and modern UI with smooth animations
+* Create TODOs with title and description
+* View all tasks in a clean dashboard UI
+* Edit existing TODOs using an inline form
+* Mark tasks as completed/uncompleted
+* Delete tasks with confirmation modal
+* Visual indication for completed tasks
+* Smooth animations and transitions
+* Toast notifications for user feedback
 
 ---
 
-## 🧠 Key Highlights
+## 💎 Key Enhancements
 
-* RESTful API architecture
-* Clean component-based frontend structure
-* MongoDB data persistence
-* User-friendly UI with validation and feedback
-* Error and loading state handling
+* Structured error handling (frontend + backend)
+* Loading states for better user experience
+* Disabled UI during API operations to prevent duplicate actions
+* Centralized API error handling using Axios interceptors
+* Clean and responsive SaaS-style UI design
 
 ---
 
 ## 📁 Project Structure
 
-```
+```id="f6dqqv"
 todo-app/
 │
 ├── backend/
@@ -49,14 +51,14 @@ todo-app/
 
 ### 1. Clone the Repository
 
-```
+```id="1rz0wj"
 git clone <your-repo-url>
 cd todo-app
 ```
 
 ### 2. Run Backend
 
-```
+```id="p1rbj6"
 cd backend
 npm install
 npm run dev
@@ -64,7 +66,7 @@ npm run dev
 
 ### 3. Run Frontend
 
-```
+```id="z8dtn1"
 cd frontend
 npm install
 npm start
@@ -74,28 +76,28 @@ npm start
 
 ## 📌 Notes
 
-* Make sure MongoDB is running locally or use MongoDB Atlas
-* Backend runs on: `http://localhost:5000`
-* Frontend runs on: `http://localhost:3000`
+* Backend runs on `http://localhost:5000`
+* Frontend runs on `http://localhost:3000`
+* Ensure MongoDB is running locally or use MongoDB Atlas
 
 ---
 
 ## 🎯 Assumptions & Limitations
 
-* No authentication system (single-user app)
-* Basic validation implemented on frontend
-* Designed for demonstration purposes, not production deployment
+* Single-user application (no authentication)
+* Basic validation implemented
+* Designed for demonstration purposes
 
 ---
 
 ## 🎥 Demo
 
-A short demo video and walkthrough of the codebase is included in the submission as required.
+A short demo video and code walkthrough are included as part of the submission.
 
 ---
 
 ## 🙌 Final Thoughts
 
-This project focuses on clarity, clean structure, and a good user experience rather than over-engineering. It reflects my understanding of full-stack fundamentals and attention to UI/UX detail.
+The goal of this project was to build a clean, maintainable, and user-friendly full-stack application while focusing on both functionality and user experience.
 
 ---
