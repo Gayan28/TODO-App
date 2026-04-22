@@ -19,10 +19,9 @@ function App() {
   return (
     <div className="app-container">
       <Toaster position="top-right" />
-      
       <div className="dashboard">
         <div className="header">
-          <h1>📋 Task Dashboard</h1>
+          <h1>✨ Task Dashboard</h1>
         </div>
 
         <TodoForm fetchTodos={fetchTodos} />
