@@ -10,7 +10,7 @@ function TodoForm({ fetchTodos }) {
     if (!title.trim()) return toast.error("Title is required");
 
     await API.post("/", { title, description });
-    toast.success("Task added");
+    toast.success("Task added 🎉");
 
     setTitle("");
     setDescription("");
@@ -31,7 +31,7 @@ function TodoForm({ fetchTodos }) {
         onChange={(e) => setDescription(e.target.value)}
       />
 
-      <button className="add-btn" onClick={addTodo}>
+      <button className="btn add-btn" onClick={addTodo}>
         Add
       </button>
     </div>
