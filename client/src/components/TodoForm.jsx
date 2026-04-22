@@ -1,46 +1,39 @@
 import React, { useState } from "react";
 import API from "../api";
+import toast from "react-hot-toast";
 
 function TodoForm({ fetchTodos }) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  const [error, setError] = useState("");
 
-  const handleSubmit = async () => {
-    if (!title.trim()) {
-      return setError("Title is required");
-    }
+  const addTodo = async () => {
+    if (!title.trim()) return toast.error("Title is required");
 
-    try {
-      await API.post("/", { title, description });
-      setTitle("");
-      setDescription("");
-      setError("");
-      fetchTodos();
-    } catch {
-      setError("Failed to add todo");
-    }
+    await API.post("/", { title, description });
+    toast.success("Task added");
+
+    setTitle("");
+    setDescription("");
+    fetchTodos();
   };
 
   return (
     <div className="form">
       <input
-        placeholder="Enter task title..."
+        placeholder="Task title..."
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
 
       <input
-        placeholder="Enter description..."
+        placeholder="Description..."
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
 
-      <button style={{ background: "#00c9a7", color: "white" }} onClick={handleSubmit}>
-        ➕ Add Task
+      <button className="add-btn" onClick={addTodo}>
+        Add
       </button>
-
-      {error && <p style={{ color: "yellow" }}>{error}</p>}
     </div>
   );
 }
