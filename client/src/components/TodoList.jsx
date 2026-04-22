@@ -2,15 +2,9 @@ import React from "react";
 import TodoItem from "./TodoItem";
 
 function TodoList({ todos, fetchTodos }) {
-
   if (todos.length === 0) {
-  return (
-    <div style={{ textAlign: "center", marginTop: "20px", color: "white" }}>
-      <h3>🎉 No tasks yet</h3>
-      <p>Add your first TODO above!</p>
-    </div>
-  );
-}
+    return <p style={{ textAlign: "center" }}>🚀 No tasks yet. Add one!</p>;
+  }
 
   return (
     <div>

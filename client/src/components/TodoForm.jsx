@@ -23,18 +23,22 @@ function TodoForm({ fetchTodos }) {
   };
 
   return (
-    <div>
+    <div className="form">
       <input
-        placeholder="Enter title..."
+        placeholder="Enter task title..."
         value={title}
         onChange={(e) => setTitle(e.target.value)}
       />
+
       <input
         placeholder="Enter description..."
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
-      <button onClick={handleSubmit}>Add</button>
+
+      <button style={{ background: "#00c9a7", color: "white" }} onClick={handleSubmit}>
+        ➕ Add Task
+      </button>
 
       {error && <p style={{ color: "yellow" }}>{error}</p>}
     </div>

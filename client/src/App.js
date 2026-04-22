@@ -30,7 +30,7 @@ function App() {
   return (
     <div className="app-container">
       <div className="glass">
-        <h1>✨ Colorful TODO App</h1>
+        <h1>MY TODO APP</h1>
 
         <TodoForm fetchTodos={fetchTodos} />
 

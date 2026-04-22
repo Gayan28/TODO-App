@@ -2,31 +2,90 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #667eea, #764ba2);
-  color: #333;
 }
 
 .app-container {
-  max-width: 700px;
-  margin: 40px auto;
+  max-width: 750px;
+  margin: 50px auto;
   padding: 20px;
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 30px;
   color: white;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
 }
 
 button {
+  padding: 10px 14px;
+  border-radius: 10px;
   border: none;
-  padding: 8px 12px;
-  margin: 5px;
-  border-radius: 8px;
   cursor: pointer;
+  font-weight: 500;
 }
 
 button:hover {
-  opacity: 0.8;
+  opacity: 0.9;
+}
+
+/* TODO CARD */
+.todo-card {
+  background: white;
+  color: #333;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.todo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.todo-desc {
+  font-size: 14px;
+  color: #666;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.6;
 }
